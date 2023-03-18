@@ -2,14 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 
-
 /**
- *  * main - Entry point
- *   *
- *    * Description: print value of n satus; zero, positive or negative
- *     *
- *      * Return: Always 0 (Success)
- *      */
+ *  * main - print whether the num stored in the variable n is pos or neg.
+ *   * Return: 0
+ *   **/
 
 int main(void)
 {
@@ -18,13 +14,20 @@ int main(void)
 			srand(time(0));
 				n = rand() - RAND_MAX / 2;
 
-					/*my code*/
-					if (n > 0)
-								printf("%i is positive\n", n);
-						else if (n == 0)
-									printf("%i is zero\n", n);
-							else
-										printf("%i is negative\n", n);
+					printf("%d", n);
 
-								return (0);
+						if (n > 0)
+								{
+											puts(" is positive");
+												}
+							else if (n == 0)
+									{
+												puts(" is zero");
+													}
+								else
+										{
+													puts(" is negative");
+														}
+
+									return (0);
 }
