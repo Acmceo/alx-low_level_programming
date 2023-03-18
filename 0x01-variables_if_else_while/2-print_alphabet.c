@@ -1,19 +1,17 @@
 #include <stdio.h>
 
 /**
- *  * main - prints the alphabet in lowercase, followed by a new line.
- *   * Return: 0
- *   **/
-
+ *  * main - A program prints the alphabet in lowercase, followed by a new line.
+ *   *
+ *    * Return: 0 (Success)
+ *     */
 int main(void)
 {
-		char i;
+	char	c = 'a';
 
-			for (i = 'a'; i <= 'z'; i++)
-					{
-								putchar(i);
-									}
-				putchar('\n');
+	while (c <= 'z')
+		putchar(c++);
+	putchar('\n');
 
-					return (0);
-}
+	return (0);
+}}
