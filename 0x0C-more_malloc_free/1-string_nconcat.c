@@ -1,5 +1,3 @@
-1-string_nconcat.c
-
 #include <stdlib.h>
 #include "main.h"
 
